@@ -1,0 +1,14 @@
+@import '../../scss/root';
+
+
+.portfolioInfo { margin-bottom: 1.5em; }
+
+.return {
+  margin-left: 0.5rem;
+  font-size: 0.4em;
+}
+
+/** Rules for styling the portfolio return */
+.flat { color: var(--gray-core); }
+.up { color: var(--green-core); }
+.down { color: var(--red-core); }

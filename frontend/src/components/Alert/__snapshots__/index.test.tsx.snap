@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders an Alert with a message 1`] = `
+<div
+  class="alert success visible"
+  data-testid="alert"
+>
+  <div
+    class="alertMssg"
+  >
+    Successfully purchased 2 shares of ABC
+  </div>
+</div>
+`;

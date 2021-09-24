@@ -1,0 +1,90 @@
+@import '../../scss/root';
+
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
+.price { font-size: 3em; }
+.priceChange { margin-left: 0.75rem; }
+
+/** For styling price changes */
+.flat { color: #fff; }
+.up { color: var(--green-core); }
+.down { color: var(--red-core); }
+
+.sharesInput {
+  padding: 10px;
+  width: 30%;
+  align-items: center;
+  vertical-align: middle;
+  border-radius: 4px;
+  border: none;
+  height: 40px;
+  color: #fff;
+  background-color: #0e0e0e;
+}
+
+.sharesInput:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.btn {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btnDefault {
+  padding: 5px;
+  width: 35px;
+  color: #c0c0c0;
+  background-color: var(--black-core);
+  box-shadow: none !important;
+  outline: none !important;
+
+  &:first-child {
+    margin-right: 2px;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.btnSuccess {
+  background-color: var(--green-core);
+  border: 1px solid var(--green-core);
+
+  &:hover {
+    background-color: darken($color: #1fc77a, $amount: 5%);
+    border: 1px solid darken($color: #1fc77a, $amount: 5%);
+  }
+}
+
+.btnDanger {
+  color: #fff;
+  background-color: var(--red-core);
+  border-color: var(--red-core);
+
+  &:hover {
+    color: #fff;
+    background-color: darken($color: #dc3545, $amount: 10%);
+    border: 1px solid darken($color: #dc3545, $amount: 10%);
+  }
+}
+
+.footer {
+  margin: 1.5em 0 1em 0;
+  display: inline-flex;
+}
+
+.previewContent { visibility: hidden; }
+
+.showPreview { visibility: visible; }

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a watchlist containing two instruments 1`] = `
+<div
+  class="watchlist"
+  data-testid="watchlist"
+>
+  <h4
+    class="text-center pt-3 pb-5"
+  >
+    Watchlist
+  </h4>
+  <ul
+    class="list-group px-3 pb-3"
+  >
+    <li
+      class="instrument selected"
+      data-testid="abc"
+    >
+      <span>
+        ABC
+      </span>
+      <div>
+        <span
+          class="pill"
+          id="ABC--price"
+        />
+      </div>
+    </li>
+    <li
+      class="instrument"
+      data-testid="xyz"
+    >
+      <span>
+        XYZ
+      </span>
+      <div>
+        <span
+          class="pill"
+          id="XYZ--price"
+        />
+      </div>
+    </li>
+  </ul>
+</div>
+`;

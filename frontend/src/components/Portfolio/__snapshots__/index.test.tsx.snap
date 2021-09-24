@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a portfolio with 2 positions 1`] = `
+<div
+  class="col-md-4 mx-auto"
+  data-testid="portfolio"
+>
+  <div
+    class="card card-body text-center mt-5"
+  >
+    <h4
+      class="heading display-5 pb-4"
+    >
+      My Portfolio
+    </h4>
+    <div
+      class="portfolioInfo"
+    >
+      <h1
+        class="heading display-5 pb-4"
+      >
+        1000
+        <span
+          class="return flat"
+        >
+          0%
+        </span>
+      </h1>
+      <span>
+        Cash: 
+      </span>
+      <span>
+        $
+        1000
+      </span>
+      <br />
+      <span>
+        Equity: 
+      </span>
+      <span>
+        $
+        0
+      </span>
+    </div>
+    <div
+      class="pt-5"
+    >
+      <h4
+        class="text-left"
+      >
+        Positions
+      </h4>
+      <ul
+        class="list-group"
+      >
+        <li
+          class="ticker"
+          data-testid="abc"
+        >
+          <div
+            class="ml-3"
+          >
+            <span
+              class="row"
+            >
+              ABC
+            </span>
+            <span
+              class="row"
+            >
+              3
+               shares @ $
+              11.03
+              /share
+            </span>
+          </div>
+          <span
+            class="pill down"
+          >
+            0
+          </span>
+        </li>
+        <li
+          class="ticker"
+          data-testid="vol"
+        >
+          <div
+            class="ml-3"
+          >
+            <span
+              class="row"
+            >
+              VOL
+            </span>
+            <span
+              class="row"
+            >
+              2
+               shares @ $
+              75.01
+              /share
+            </span>
+          </div>
+          <span
+            class="pill down"
+          >
+            0
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

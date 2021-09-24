@@ -1,0 +1,21 @@
+@import '../../scss/root';
+@import '../../scss/mixins/instrument.scss';
+@import '../../scss/mixins/pill.scss';
+
+
+.instrument {
+  @include instrument;
+
+  cursor: pointer;
+}
+
+.pill {
+  @include pill;
+}
+
+/** 
+* For visually indicating a position's performance.
+*/
+.flat { background-color: var(--gray-core); }
+.up { background-color: var(--green-core); }
+.down { background-color: var(--red-core); }

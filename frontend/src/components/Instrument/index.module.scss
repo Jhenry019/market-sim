@@ -1,0 +1,23 @@
+@import '../../scss/root';
+@import '../../scss/mixins/instrument.scss';
+@import '../../scss/mixins//pill.scss';
+
+
+.instrument {
+  @include instrument;
+
+  cursor: pointer;
+}
+
+.selected { background-color: var(--black-core); }
+
+.pill {
+  @include pill;
+}
+
+/** 
+* For styling an instrument's price changes.
+*/
+.flat { background-color: var(--gray-core); }
+.up { background-color: var(--green-core); }
+.down { background-color: var(--red-core); }

@@ -1,0 +1,10 @@
+@mixin instrument {
+  position: relative;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .75rem 1.25rem;
+  border: 1px solid rgba(0,0,0,.125);
+  color: #fff;
+  background: #1f1f1f;
+}

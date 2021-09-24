@@ -1,0 +1,17 @@
+@mixin alert() {
+  position: absolute;
+  z-index: 10000;
+  display: block;
+  padding: 12px 15px;
+  width: 50%;
+  transform: translate(50%, 30%);
+  font-size: 0.85em;
+  border-radius: 6px;
+  box-shadow: 1px 3px 5px #00000027;
+  text-align: center;
+
+  .alert__mssg {
+    width: 100%;
+    align-self: center;
+  }
+}

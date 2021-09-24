@@ -1,0 +1,26 @@
+@import '../../scss/root';
+@import '../../scss/mixins/alert.scss';
+
+
+.alert {
+  transform: translate(50%, -100%) !important;
+  transition: 0.2s transform;
+}
+
+.error {
+  @include alert;
+
+  color: var(--red-4);
+  background-color: var(--red-1);
+}
+
+.success {
+  @include alert;
+
+  color: var(--green-3);
+  background-color: var(--green-1);
+}
+
+.visible {
+  transform: translate(50%, 30%) !important;
+}
