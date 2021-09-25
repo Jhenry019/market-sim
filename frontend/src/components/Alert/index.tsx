@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import classNames from '../../utils/classNames';
+import { AlertContext } from '../../context/alert';
 import styles from './index.module.scss';
 
 
@@ -19,6 +20,7 @@ export default function Alert({
 }: AlertProps): JSX.Element 
 {
   const [visible, setVisible] = useState<boolean>(children !== '');
+  const context = useContext(AlertContext);
 
   useEffect(() => {
     /**
@@ -38,7 +40,7 @@ export default function Alert({
         clearTimeout(hide);
       }
     }
-  }, [children]);
+  }, [context]);
 
   return (
     <div 

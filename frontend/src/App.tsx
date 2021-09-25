@@ -50,8 +50,8 @@ export default function App(): JSX.Element
 	const [alert, setAlert] = useState({
 		Type: "success" as "success" | "error",
 		message: "",
-		sendMessage: (mssg: string, Type: "success" | "error") => {
-			setAlert({...alert, message: mssg, Type})
+		sendMessage: (message: string, Type: "success" | "error") => {
+			setAlert({...alert, message, Type});
 		}
 	});
 
