@@ -3,6 +3,7 @@ import socketIOClient, { Socket } from 'socket.io-client';
 import { PortfolioProps } from '../components/Portfolio';
 import { PortfolioContext } from '../context/portfolio';
 import { AlertContext } from '../context/alert';
+import { AlertProps } from '../components/Alert';
 
 
 export type OrderType = 'buyOrder' | 'sellOrder';
@@ -16,7 +17,7 @@ interface OrderData {
    */
   portfolio: PortfolioProps;
   message: {
-    Type: "success" | "error", 
+    Type: AlertProps["Type"], 
     body: string
   };
 };

@@ -7,7 +7,7 @@ import Portfolio, {
 
 import StockPreivew from './components/StockPreview';
 import Watchlist from './components/Watchlist';
-import Alert from './components/Alert';
+import Alert, { AlertProps } from './components/Alert';
 import { InstrumentProps } from './components/Instrument';
 import { PortfolioContext } from './context/portfolio'; 
 import { SelectedContext } from './context/selected';
@@ -48,9 +48,9 @@ export default function App(): JSX.Element
 	});
 	const [instruments, setInstruments] = useState<Array<InstrumentProps>>([]);
 	const [alert, setAlert] = useState({
-		Type: "success" as "success" | "error",
+		Type: "success" as AlertProps["Type"],
 		message: "",
-		sendMessage: (message: string, Type: "success" | "error") => {
+		sendMessage: (message: string, Type: AlertProps["Type"]) => {
 			setAlert({...alert, message, Type});
 		}
 	});

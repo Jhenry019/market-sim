@@ -16,7 +16,7 @@ export interface InstrumentProps {
 }
 
 export default function Instrument({
-  symbol = 'ABC',
+  symbol,
   isSelected,
   dataTestId
 }: InstrumentProps): JSX.Element 
